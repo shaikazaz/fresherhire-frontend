@@ -1,0 +1,34 @@
+FresherHire Day 1 + Day 2 completion additions
+
+ADDED/FIXED
+1. Seeker dashboard route: /api/seeker/dashboard/
+2. Recruiter rejection requires a reason.
+3. Application response SLA fields: response_due_at, responded_at, sla_status.
+4. SLA management command:
+   python manage.py sla_feedback
+   python manage.py sla_feedback --dry-run
+5. Automatic system feedback for overdue applications.
+6. HubSpot CRM signup sync through CRM v3 contacts API.
+7. CRM sync attempts stored in crm_sync_log.
+8. Admin analytics API: /api/platform/analytics/
+9. React admin analytics dashboard.
+10. Recruiter cap extension UI and best-match promotion UI.
+11. Best-match jobs get a 24-hour review window.
+12. Recruiter interview completion UI.
+13. Seeker interview confirmation UI and contact-unlock state.
+14. SLA response badges in seeker and recruiter application screens.
+15. CRM admin screen registration.
+
+NOT INCLUDED
+- Day 3 Razorpay
+- SEO/sitemap/robots/JobPosting JSON-LD
+- final 5-slide presentation
+- production deployment configuration
+
+IMPORTANT SETUP
+- Generate/apply migrations in backend after extracting:
+  python manage.py makemigrations
+  python manage.py migrate
+- Set HUBSPOT_ACCESS_TOKEN in backend/.env for live HubSpot sync.
+- Without the HubSpot token, signups are still created and the CRM attempt is logged as skipped.
+- Frontend dependencies must be installed with npm install.

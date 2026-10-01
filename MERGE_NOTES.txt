@@ -1,0 +1,15 @@
+FresherHire Day 1 + Day 2 merged project
+
+Base: uploaded jobportal_day1(1).zip
+Added: Day 2 implementation from FresherHire_Day2_complete.zip
+
+Day 2 blocks:
+1. Recruiter applicants/ranking/decision feedback
+2. Cap extension/waitlist promotion/best-match window
+3. Interviews/contact unlock
+4. Candidate search
+5. Plans/job limits
+6. Matching-job notifications + email
+
+Python cache files were intentionally excluded.
+Migrations were not generated in this ZIP; generate them in your Windows environment.

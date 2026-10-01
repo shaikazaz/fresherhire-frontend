@@ -1,0 +1,3 @@
+from django.urls import path
+from .views import RecruiterApplicantsView,ApplicationDecisionView,InterviewScheduleView,InterviewDoneView,InterviewConfirmView,CandidateSearchView
+urlpatterns=[path("recruiter/applicants/",RecruiterApplicantsView.as_view()),path("recruiter/applications/<int:pk>/decision/",ApplicationDecisionView.as_view()),path("recruiter/applications/<int:pk>/schedule-interview/",InterviewScheduleView.as_view()),path("recruiter/interviews/<int:pk>/done/",InterviewDoneView.as_view()),path("seeker/interviews/<int:pk>/confirm/",InterviewConfirmView.as_view()),path("recruiter/candidates/",CandidateSearchView.as_view())]
